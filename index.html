@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="深技大一技之长：由学长学姐共同维护的升学与职业经验档案馆。">
+  <title>一技之长 · SZTU 生涯经验档案馆</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <img class="brand-mark" src="一技之长.png" alt="">
+      <span><b>一技之长</b><small>SZTU PATHFINDER</small></span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">菜单</button>
+    <nav id="main-nav" aria-label="主导航">
+      <a href="#paths">方向</a>
+      <a href="#stories">经验</a>
+      <a href="#about">关于</a>
+      <a class="nav-cta" href="contribute.html">分享我的故事 ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> 写给每一个正在选择的你</p>
+        <h1>前路不止一条，<br><em>每条都有迹可循。</em></h1>
+        <p class="lead">这里收集深技大学长学姐真实的考研、留学与求职经历。我们不替你做决定，只把走过的路标留给你。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#stories">开始翻阅 <span>↓</span></a>
+          <span class="record-count"><b>36</b> 份真实记录持续更新</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="一技之长.png" alt="一技之长标志">
+        <p><span>ABOUT THE NAME</span>愿你找到真正属于自己的<br>一技之长。</p>
+      </div>
+    </section>
+
+    <section class="paths" id="paths">
+      <div class="section-heading">
+        <div><p class="section-index">01 / 找到方向</p><h2>你正在思考哪条路？</h2></div>
+        <p>从结果回看过程，也许能让眼前的选择更具体一点。</p>
+      </div>
+      <div class="path-grid">
+        <a class="path-card" href="#stories" data-filter-link="考研"><span class="path-number">01</span><span class="path-icon">研</span><h3>国内考研</h3><p>择校、备考、复试与调剂</p><b>12 份记录 →</b></a>
+        <a class="path-card" href="#stories" data-filter-link="留学"><span class="path-number">02</span><span class="path-icon">留</span><h3>海外留学</h3><p>申请、语言、选校与文书</p><b>8 份记录 →</b></a>
+        <a class="path-card" href="#stories" data-filter-link="就业"><span class="path-number">03</span><span class="path-icon">职</span><h3>求职就业</h3><p>实习、校招、面试与选择</p><b>16 份记录 →</b></a>
+      </div>
+    </section>
+
+    <section class="stories" id="stories">
+      <div class="section-heading story-heading">
+        <div><p class="section-index">02 / 过来人说</p><h2>最近更新的经验</h2></div>
+        <div class="filters" role="group" aria-label="筛选经验方向">
+          <button class="active" data-filter="全部">全部</button><button data-filter="考研">考研</button><button data-filter="留学">留学</button><button data-filter="就业">就业</button>
+        </div>
+      </div>
+      <div class="story-grid">
+        <article class="story-card featured" data-category="考研">
+          <div class="card-top"><span class="tag">考研</span><time>2026.06</time></div>
+          <h3>从暑假才开始的跨考：我的时间表与踩坑清单</h3>
+          <p>没有“完美开局”，就从今天能做的一小时开始。记录专业课、公共课的复习节奏和复试准备。</p>
+          <div class="profile"><span class="avatar">林</span><span><b>林同学</b><small>大数据学院 2026 届 → 华南理工大学</small></span><span class="arrow">↗</span></div>
+        </article>
+        <article class="story-card" data-category="就业">
+          <div class="card-top"><span class="tag">就业</span><time>2026.05</time></div>
+          <h3>三段实习之后，我最终选择了制造业数字化</h3>
+          <p>从第一份简历到秋招签约，一份非“大厂叙事”的真实求职记录。</p>
+          <div class="profile"><span class="avatar blue-avatar">陈</span><span><b>陈同学</b><small>新材料与新能源学院 2026 届</small></span><span class="arrow">↗</span></div>
+        </article>
+        <article class="story-card" data-category="留学">
+          <div class="card-top"><span class="tag">留学</span><time>2026.04</time></div>
+          <h3>均分不突出，如何准备一份有说服力的申请</h3>
+          <p>选校定位、科研经历和文书表达：把自己的优势讲清楚。</p>
+          <div class="profile"><span class="avatar green-avatar">周</span><span><b>周同学</b><small>城市交通与物流学院 2026 届</small></span><span class="arrow">↗</span></div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>这个方向的经验正在整理中。</p>
+      <button class="more-button">查看全部经验 <span>↗</span></button>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p>“我们相信，<br>一份坦诚的经历，<br>能让后来者少走一点弯路。”</p>
+      <div><span>一技之长发起人</span><b>SZTU STUDENT COMMUNITY</b></div>
+    </section>
+
+    <section class="contribute" id="contribute">
+      <div><p class="section-index">03 / 把路标留下</p><h2>你的故事，可能正是<br>别人需要的答案。</h2></div>
+      <div class="contribute-copy"><p>无论结果是否“光鲜”，真实的过程都有价值。欢迎提交你的背景、时间线、经验和联系方式（联系方式可选）。</p><a class="primary-button light" href="contribute.html">我要分享经验 <span>↗</span></a><small>下载模板后填写 · 支持匿名发布</small></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><img class="brand-mark" src="一技之长.png" alt=""><span><b>一技之长</b><small>始于深技大，写给后来者</small></span></div><p>内容仅代表分享者个人经历，请结合自身情况独立判断。</p><p>© 2026 SZTU Pathfinder</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

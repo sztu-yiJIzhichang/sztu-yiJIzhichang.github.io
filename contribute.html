@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="向一技之长投稿你的升学或就业经验。">
+  <title>分享经验 · 一技之长</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="返回首页">
+      <img class="brand-mark" src="一技之长.png" alt="">
+      <span><b>一技之长</b><small>SZTU PATHFINDER</small></span>
+    </a>
+    <a class="back-link" href="index.html">← 返回首页</a>
+  </header>
+
+  <main class="submit-page">
+    <section class="submit-intro">
+      <p class="section-index">CONTRIBUTE / 贡献方式</p>
+      <h1>把走过的路，<br>留给后来的人。</h1>
+      <blockquote>化成光，照耀后来者。</blockquote>
+    </section>
+
+    <section class="submit-content">
+      <div class="submit-step">
+        <span>01</span>
+        <div>
+          <h2>选择对应模板</h2>
+          <p>下载与你经历对应的模板，按照提示填写即可。模板是普通文本文件，无需学习特殊格式。</p>
+          <div class="template-list">
+            <a href="templates/考研经验分享模板.txt" download><span><b>考研经验</b><small>择校、初试、复试与建议</small></span><strong>下载模板 ↓</strong></a>
+            <a href="templates/留学经验分享模板.txt" download><span><b>留学经验</b><small>背景、选校、申请与建议</small></span><strong>下载模板 ↓</strong></a>
+            <a href="templates/就业经验分享模板.txt" download><span><b>就业经验</b><small>实习、校招、面试与选择</small></span><strong>下载模板 ↓</strong></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-step">
+        <span>02</span>
+        <div>
+          <h2>填写你的经历</h2>
+          <p>你可以删除不适用的问题，也可以增加任何你认为值得分享的内容。真实、具体比“标准答案”更有帮助。</p>
+          <p class="privacy-note">姓名和联系方式均可选择不公开，请在模板中注明。</p>
+        </div>
+      </div>
+
+      <div class="submit-step contact-step">
+        <span>03</span>
+        <div>
+          <h2>发送给我们</h2>
+          <p>填写完成后，将文件通过邮箱或微信发送。维护者会负责后续排版与发布。</p>
+          <div class="contact-options">
+            <a href="mailto:hengxiangchen428@gmail.com"><small>邮箱</small><b>hengxiangchen428@gmail.com</b><strong>发送邮件 ↗</strong></a>
+            <div><small>微信</small><b>chx15816659727</b><button type="button" id="copy-wechat">复制微信号</button></div>
+          </div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-brand"><img class="brand-mark" src="一技之长.png" alt=""><span><b>一技之长</b><small>始于深技大，写给后来者</small></span></div><p>感谢每一位愿意分享真实经历的同学。</p><p>© 2026 SZTU Pathfinder</p></footer>
+  <script>
+    const copyButton = document.querySelector('#copy-wechat');
+    const copyStatus = document.querySelector('#copy-status');
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('chx15816659727');
+        copyStatus.textContent = '微信号已复制。';
+      } catch (error) {
+        copyStatus.textContent = '请手动复制：chx15816659727';
+      }
+    });
+  </script>
+</body>
+</html>
