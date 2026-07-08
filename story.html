@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一技之长真实经验分享。">
+  <title>经验分享 · 一技之长</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="一技之长.png" alt=""><span><b>一技之长</b><small>SZTU PATHFINDER</small></span></a>
+    <a class="back-link" href="index.html#stories">← 返回经验列表</a>
+  </header>
+  <main class="article-page">
+    <header class="article-header">
+      <p class="section-index" id="story-category"></p>
+      <h1 id="story-title">正在读取经验……</h1>
+      <div class="article-meta"><span id="story-author"></span><span id="story-path"></span></div>
+    </header>
+    <section class="article-body">
+      <p class="source-note">以下内容由分享者本人提供，仅作个人经验参考。</p>
+      <iframe id="story-content" title="经验分享正文"></iframe>
+      <p class="raw-link"><a id="raw-story" href="#">无法显示？查看原始文本 ↗</a></p>
+    </section>
+  </main>
+  <footer><div class="footer-brand"><img class="brand-mark" src="一技之长.png" alt=""><span><b>一技之长</b><small>始于深技大，写给后来者</small></span></div><p>内容仅代表分享者个人经历，请结合自身情况独立判断。</p><p>© 2026 SZTU Pathfinder</p></footer>
+  <script>
+    const stories = {
+      ke: { category: '考研经验 / 2026', title: '中国科学技术大学能源动力考研：全年备考与复试经验', author: '柯灿杰', path: '新能源科学与工程 → 中国科学技术大学', file: 'assets/柯灿杰.txt' },
+      jiang: { category: '考研经验 / 2026', title: '清华深研院 846：从初试规划到复试抗压', author: '江志飞', path: '新材料与新能源学院 → 清华大学深圳国际研究生院', file: 'assets/江志飞.txt' },
+      ding: { category: '留学经验 / 2026', title: '从深技大到 MBZUAI：机器人硕士全奖申请记录', author: '丁浩剀 · ditang', path: '电子科学与技术 2022 级 → MBZUAI MS Robotics', file: 'assets/丁浩剀.txt' }
+    };
+    const key = new URLSearchParams(location.search).get('case');
+    const story = stories[key] || stories.ke;
+    document.title = `${story.title} · 一技之长`;
+    document.querySelector('#story-category').textContent = story.category;
+    document.querySelector('#story-title').textContent = story.title;
+    document.querySelector('#story-author').textContent = story.author;
+    document.querySelector('#story-path').textContent = story.path;
+    document.querySelector('#story-content').src = story.file;
+    document.querySelector('#raw-story').href = story.file;
+  </script>
+</body>
+</html>
